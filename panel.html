@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel | 1PAD1222 Hosting</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="1PAD1222" class="nav-logo" />
+        <span class="brand-text">1PAD1222 Hosting</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="panel.html" class="active">Panel</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menuBtn3" class="menu-btn" aria-label="menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel container">
+      <h1>Control Panel</h1>
+      <p class="muted">Mock login — replace with your Pterodactyl link when ready.</p>
+
+      <div class="panel-box">
+        <input placeholder="Username" type="text" />
+        <input placeholder="Password" type="password" />
+        <div class="panel-actions">
+          <button class="btn pixel" onclick="playClick(); alert('Mock login — connect your panel later')">Login</button>
+          <a class="btn outline pixel" href="#" onclick="playClick(); alert('Link to your real panel when configured')">Go to Panel</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 1PAD1222 Hosting — Website by Sangam Shrivastava</div>
+  </footer>
+
+  <canvas id="bg"></canvas>
+  <script src="js/script.js"></script>
+</body>
+</html>

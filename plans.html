@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plans | 1PAD1222 Hosting</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="1PAD1222" class="nav-logo" />
+        <span class="brand-text">1PAD1222 Hosting</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plans.html" class="active">Plans</a></li>
+        <li><a href="panel.html">Panel</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menuBtn2" class="menu-btn" aria-label="menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="plans container">
+      <h1>Choose your plan</h1>
+      <p class="muted">All plans include DDoS protection & instant setup. Free tier is available.</p>
+
+      <div class="plans-grid">
+        <!-- Free -->
+        <div class="card plan-card">
+          <div class="card-head">Starter</div>
+          <div class="card-body">
+            <p class="price">Free</p>
+            <ul>
+              <li>1 Core CPU</li>
+              <li>1 GB RAM</li>
+              <li>5 GB NVMe Storage</li>
+              <li>Instant setup</li>
+            </ul>
+          </div>
+          <div class="card-foot">
+            <a class="btn pixel" onclick="playClick();">Get Free</a>
+          </div>
+        </div>
+
+        <!-- Best Offer -->
+        <div class="card plan-card best">
+          <div class="card-head">Best Offer</div>
+          <div class="card-body">
+            <p class="price">Special</p>
+            <ul>
+              <li>400% CPU Power</li>
+              <li>5 GiB RAM</li>
+              <li>+6 GB Bonus Storage</li>
+              <li>DDoS & Priority Support</li>
+            </ul>
+          </div>
+          <div class="card-foot">
+            <a class="btn pixel" onclick="playClick();">Claim Now</a>
+          </div>
+        </div>
+
+        <!-- Pro -->
+        <div class="card plan-card">
+          <div class="card-head">Pro</div>
+          <div class="card-body">
+            <p class="price">Free (demo)</p>
+            <ul>
+              <li>4 Cores</li>
+              <li>4 GB RAM</li>
+              <li>50 GB Storage</li>
+              <li>Full Control</li>
+            </ul>
+          </div>
+          <div class="card-foot">
+            <a class="btn pixel" onclick="playClick();">Coming Soon</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 1PAD1222 Hosting — Website by Sangam Shrivastava</div>
+  </footer>
+
+  <canvas id="bg"></canvas>
+  <script src="js/script.js"></script>
+</body>
+</html>

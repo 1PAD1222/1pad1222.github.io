@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>1PAD1222 Hosting | Free Minecraft Server Hosting</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- loading screen -->
+  <div id="loading" class="loading">
+    <div class="loader-box">
+      <img src="assets/logo.png" alt="1PAD1222 Logo" class="loader-logo" />
+      <div class="loader-text">Loading World<span class="dots">...</span></div>
+    </div>
+  </div>
+
+  <!-- audio -->
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="1PAD1222" class="nav-logo" />
+        <span class="brand-text">1PAD1222 Hosting</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="panel.html">Panel</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="menu-btn" aria-label="menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1 class="title">Free Minecraft Server Hosting <span class="accent">24/7</span></h1>
+          <p class="lead">Instant setup • DDoS protection • SSD nodes • Full Pterodactyl support</p>
+
+          <div class="cta-row">
+            <a class="btn pixel" href="plans.html" onclick="playClick()">Get Free Server</a>
+            <a class="btn outline pixel" href="panel.html" onclick="playClick()">Open Panel</a>
+          </div>
+
+          <ul class="quick-features">
+            <li>✔ Free forever tier</li>
+            <li>✔ Mod & plugin support</li>
+            <li>✔ Global low-ping nodes</li>
+            <li>✔ 24/7 support</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="status-card">
+            <div class="status-title">Network Status</div>
+            <div class="status-body">
+              <div class="dot online"></div>
+              <div class="status-text">ONLINE</div>
+            </div>
+            <div class="status-small">Last checked: <span id="statusTime">--</span></div>
+          </div>
+
+          <div class="logo-card">
+            <img src="assets/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container">
+      <h2>Why choose 1PAD1222?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Ultra Performance</h3>
+          <p>Next-gen CPUs, NVMe storage — minimal lag and fast world loads.</p>
+        </div>
+        <div class="feature-card">
+          <h3>DDoS Protection</h3>
+          <p>Automatic protection so your server stays online during attacks.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Instant Setup</h3>
+          <p>Create servers in seconds using the Pterodactyl panel.</p>
+        </div>
+        <div class="feature-card">
+          <h3>All Versions</h3>
+          <p>Paper, Spigot, Fabric, Forge — plugins and modpacks supported.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- quick plans preview -->
+    <section class="preview container">
+      <h2>Plans (Preview)</h2>
+      <div class="plans-preview">
+        <article class="plan small">
+          <div class="ribbon">Free</div>
+          <h3>Starter</h3>
+          <p><strong>1 GB</strong> RAM • 1 Core</p>
+          <a class="btn pixel" href="plans.html" onclick="playClick()">Get Free</a>
+        </article>
+
+        <article class="plan highlight">
+          <div class="ribbon best">BEST OFFER</div>
+          <h3>Best Offer</h3>
+          <p><strong>400% CPU</strong> • <strong>5 GiB</strong> RAM • +6 GB Bonus</p>
+          <a class="btn pixel" href="plans.html" onclick="playClick()">Claim Now</a>
+        </article>
+
+        <article class="plan">
+          <h3>Pro</h3>
+          <p><strong>4 GB</strong> RAM • 4 Cores</p>
+          <a class="btn pixel" href="plans.html" onclick="playClick()">Coming Soon</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <strong>1PAD1222 Hosting</strong> — Website by <em>Sangam Shrivastava</em></div>
+      <div class="footer-links">
+        <a href="contact.html" onclick="playClick()">Contact</a>
+        <a href="panel.html" onclick="playClick()">Panel</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- canvas background + script -->
+  <canvas id="bg"></canvas>
+  <script src="js/script.js"></script>
+</body>
+</html>
