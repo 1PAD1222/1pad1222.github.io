@@ -1,0 +1,257 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== GENERAL ===== */
+body {
+  background: #0d0d0d;
+  color: #e0e0e0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+canvas#bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid #1db954;
+  box-shadow: 0 0 15px #1db95440;
+}
+
+.logo {
+  height: 55px;
+}
+
+nav a {
+  color: #d0d0d0;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #1db954;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #1db954;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 140px 30px 100px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #1db954;
+  text-shadow: 0 0 10px #1db95480;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #bfbfbf;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-group {
+  margin-top: 40px;
+}
+
+.btn {
+  background: #1db954;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 0 15px #1db95480;
+}
+
+.btn:hover {
+  background: #00ff88;
+  box-shadow: 0 0 25px #00ff8880;
+  transform: translateY(-3px);
+}
+
+/* ===== STATS ===== */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 20px;
+  z-index: 5;
+  position: relative;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats h2 {
+  color: #1db954;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #1db95480;
+}
+
+.stats p {
+  color: #aaa;
+}
+
+/* ===== PLANS ===== */
+.plans {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.plans h1 {
+  color: #1db954;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  text-shadow: 0 0 12px #1db95460;
+}
+
+.plan-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.plan {
+  background: rgba(25, 25, 25, 0.9);
+  border: 2px solid #1db954;
+  padding: 30px 20px;
+  border-radius: 15px;
+  transition: all 0.3s;
+  width: 90%;
+  max-width: 300px;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #1db95480;
+}
+
+.plan h2 {
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  color: #bfbfbf;
+  margin: 5px 0;
+}
+
+.plan.best {
+  border-color: #00ff99;
+  background: linear-gradient(to bottom right, #0d0d0d, #003300);
+}
+
+/* ===== PANEL INFO ===== */
+.panel-info {
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.panel-info h1 {
+  color: #1db954;
+  margin-bottom: 20px;
+}
+
+.panel-info p {
+  color: #bfbfbf;
+  margin-bottom: 40px;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.contact h1 {
+  color: #1db954;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #1db954;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 2px solid #1db954;
+  position: relative;
+  z-index: 5;
+  margin-top: 100px;
+}
