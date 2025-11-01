@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | 1PAD1222 Hosting</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top, #0a0a0a, #000);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 15px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      height: 55px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover, .active {
+      color: #00ff9d !important;
+    }
+
+    .contact-section {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .contact-section h1 {
+      font-size: 2.8em;
+      color: #00ff9d;
+      margin-bottom: 10px;
+    }
+    .contact-section p {
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+    .contact-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 0 25px rgba(0,255,157,0.2);
+      transition: 0.3s;
+    }
+    .contact-card:hover {
+      box-shadow: 0 0 45px rgba(0,255,157,0.4);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      font-size: 1em;
+      resize: none;
+    }
+    .contact-form button {
+      background: linear-gradient(90deg, #00ff9d, #00aaff);
+      border: none;
+      color: black;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background: linear-gradient(90deg, #00aaff, #00ff9d);
+      transform: scale(1.03);
+    }
+    #contactResult {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="panel.html">Panel</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! 💚</p>
+
+    <div class="contact-card">
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" id="contactSubmit">Send Message</button>
+      </form>
+      <div id="contactResult"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Website by – <strong>Sangam Shrivastava</strong></p>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
