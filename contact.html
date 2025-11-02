@@ -31,12 +31,15 @@
       <h1>Contact Us</h1>
       <p class="muted">Discord: <strong>@1pad12</strong> — Email: <a href="mailto:1pad12221212@gmail.com">1pad12221212@gmail.com</a></p>
 
-      <form class="contact-form" onsubmit="event.preventDefault(); playClick(); alert('Thanks! Message sent (mock)')">
-        <input required name="name" placeholder="Your name" />
-        <input required name="email" type="email" placeholder="Your email" />
-        <textarea required name="message" placeholder="Your message"></textarea>
-        <button class="btn pixel" type="submit">Send Message</button>
-      </form>
+ <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+   <input type="hidden" name="access_key" value="e95dfebd-16d5-40ab-86e4-439703011177">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit" class="btn pixel">Send Message</button>
+</form>
     </section>
   </main>
 
@@ -48,3 +51,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
